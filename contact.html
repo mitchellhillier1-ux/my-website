@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>About — GCH Consulting</title>
-  <meta name="description" content="About GCH Consulting and our team: Glenn Hillier & Mitchell Hillier." />
+  <title>Contact — GCH Consulting</title>
+  <meta name="description" content="Contact GCH Consulting at consulting@gchgroup.co." />
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#22c55e" />
@@ -28,9 +28,27 @@
   </header>
 
   <main class="wrap">
-    <h1>About Us</h1>
-    <p><strong>Glenn Hillier & Mitchell Hillier</strong></p>
-    <p>A family owned business for over 10 years that provides unmatched consulting services for construction projects including, but not limited to, project management and project coordination.</p>
+    <h1>Contact</h1>
+    <p>Email us at <a href="mailto:consulting@gchgroup.co">consulting@gchgroup.co</a> or use the form below.</p>
+
+    <form id="contact-form" action="https://formspree.io/f/your-form-id" method="POST" novalidate>
+      <label>
+        <span>Name</span>
+        <input required name="name" autocomplete="name" />
+      </label>
+      <label>
+        <span>Email</span>
+        <input required type="email" name="email" autocomplete="email" />
+      </label>
+      <label>
+        <span>Message</span>
+        <textarea required name="message" rows="6"></textarea>
+      </label>
+      <button class="btn" type="submit">Send</button>
+      <p class="form-status" aria-live="polite"></p>
+    </form>
+
+    <p style="margin-top:1rem;">Prefer email? Write to <a href="mailto:consulting@gchgroup.co">consulting@gchgroup.co</a>.</p>
   </main>
 
   <footer>

@@ -1,25 +1,79 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My First Website</title>
-  </head>
-  <body>
-    <h1>Welcome to My Website!</h1>
-    <p>This is my very first web page. I made it myself!</p>
-    <img src="https://via.placeholder.com/300" alt="Example image">
-    <p>Here’s a link to <a href="https://www.google.com">Google</a>.</p>
-  </body>
-</html>
-<link rel="stylesheet" href="style.css">
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>About Me</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h1>About Me</h1>
-    <p>Hello! My name is [Your Name]. I’m learning how to build websites!</p>
-    <a href="index.html">Back to Home</a>
-  </body>
+<html lang="en">
+<head>
+  <title>GCH Consulting — Consulting & Project Management</title>
+  <meta name="description" content="A family owned business for over 10 years that provides unmatched consulting services for construction projects including, but not limited to, project management and project coordination." />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#22c55e" />
+  <link rel="icon" href="/assets/icons/logo.png" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <script defer src="/js/main.js"></script>
+
+</head>
+<body>
+
+  <header>
+    <div class="wrap">
+      <a class="brand" href="/"><img src="/assets/icons/logo.png" alt="GCH Consulting logo"> GCH Consulting</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <span class="badge">Consulting & Project Management</span>
+        <h1>GCH Consulting</h1>
+        <p class="lead">A family owned business for over 10 years that provides unmatched consulting services for construction projects including, but not limited to, project management and project coordination.</p>
+        <p style="margin-top:1rem;"><a class="btn" href="/contact.html">Get in touch</a></p>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <h2>Why choose us</h2>
+      <div class="grid">
+        <article class="card">
+          <div class="pad">
+            <h3>10+ Years Experience</h3>
+            <p>Family owned and trusted for over a decade.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="pad">
+            <h3>Project Management</h3>
+            <p>Clear timelines, stakeholder updates, risk control.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="pad">
+            <h3>Coordination & Delivery</h3>
+            <p>End-to-end coordination to keep construction on track.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <h2>Contact</h2>
+      <div class="contact-box">
+        <p>Email: <a href="mailto:consulting@gchgroup.co">consulting@gchgroup.co</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <small>&copy; <span id="year"></span> GCH Consulting. All rights reserved.</small>
+    </div>
+  </footer>
+
+</body>
 </html>
